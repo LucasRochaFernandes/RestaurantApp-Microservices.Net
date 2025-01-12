@@ -1,8 +1,0 @@
-### Request to Register a Restaurant
-POST http://localhost:8080/api/Item/RestaurantReference
-Content-Type: application/json
-
-{
-  "id": "e0b0c4c2-ff5d-4bd7-9c23-403476f5e2e1",
-  "name": "Nome do Restaurante"
-}

@@ -1,7 +1,6 @@
 
 using Microsoft.EntityFrameworkCore;
 using RestaurantService.API.Extensions;
-using RestaurantService.API.ExternalServices.ItemService;
 using RestaurantService.API.ExternalServices.RabbitMQ;
 using RestaurantService.API.Infra;
 
@@ -18,9 +17,6 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 // Adding Scoped Services
 builder.Services.AddUseCaseServices();
 builder.Services.AddRepositoryServices();
-
-
-builder.Services.AddHttpClient<IItemServiceClient, ItemServiceClient>();
 
 builder.Services.AddSingleton<IRabbitMQClient, RabbitMQClient>();
 

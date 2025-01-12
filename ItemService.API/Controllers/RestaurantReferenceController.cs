@@ -9,14 +9,14 @@ namespace ItemService.API.Controllers;
 [ApiController]
 public class RestaurantReferenceController : ControllerBase
 {
-    [HttpPost]
-    public async Task<IActionResult> Register(
-        [FromServices] RegisterRestaurantReferenceUseCase useCase,
-        [FromBody] RestaurantReferenceJsonRequest body)
-    {
-        var result = await useCase.Execute(body);
-        return Created(string.Empty, result);
-    }
+    //[HttpPost]
+    //public async Task<IActionResult> Register(
+    //    [FromServices] RegisterRestaurantReferenceUseCase useCase,
+    //    [FromBody] RestaurantReferenceJsonRequest body)
+    //{
+    //    var result = await useCase.Execute(body);
+    //    return Created(string.Empty, result);
+    //}
     [HttpGet]
     public async Task<IActionResult> GetAll([FromServices] AppDbContext dbContext)
     {

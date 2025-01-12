@@ -1,10 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
 using RestaurantService.API.Application.UseCases;
 using RestaurantService.API.Communication.Requests;
 using RestaurantService.API.Communication.Responses;
-using RestaurantService.API.ExternalServices.ItemService;
 using RestaurantService.API.ExternalServices.RabbitMQ;
 using RestaurantService.API.Infra;
 
