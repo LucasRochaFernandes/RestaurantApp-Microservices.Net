@@ -1,0 +1,17 @@
+﻿version: "3.8"
+
+services:
+  postgres:
+    container_name: item-service-db
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: user-item
+      POSTGRES_PASSWORD: password-item
+      POSTGRES_DB: db-item
+    networks:
+      - restaurant-bridge
+networks:
+  restaurant-bridge:
+    external: true

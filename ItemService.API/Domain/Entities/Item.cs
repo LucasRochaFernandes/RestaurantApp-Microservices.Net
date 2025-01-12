@@ -15,4 +15,6 @@ public class Item
 
     [Required]
     public Guid RestaurantId { get; set; }
+
+    public RestaurantReference RestaurantReference { get; set; }
 }

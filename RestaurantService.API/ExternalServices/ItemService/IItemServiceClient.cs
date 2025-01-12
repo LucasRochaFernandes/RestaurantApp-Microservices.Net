@@ -1,6 +1,8 @@
-﻿namespace RestaurantService.API.ExternalServices.ItemService;
+﻿using RestaurantService.API.Communication.Responses;
+
+namespace RestaurantService.API.ExternalServices.ItemService;
 
 public interface IItemServiceClient
 {
-    public Task 
+    public Task SendRestaurantReferenceToItemService(RestaurantJsonResponse content);
 }
